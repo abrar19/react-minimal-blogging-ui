@@ -43,6 +43,10 @@
     font-weight: 300;
     cursor: pointer;
 }
+.linkStyle{
+    text-decoration: none;
+    color: inherit;
+}
 .topSearchIcon{
     font-size: 18px;
     color: #666;
