@@ -43,3 +43,7 @@
     color: white;
     cursor: pointer;
 }
+.logLink{
+    text-decoration: none;
+    color: white;
+}

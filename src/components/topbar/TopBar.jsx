@@ -7,7 +7,7 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const TopBar = ({userLoggedIn}) => {
-    const user = userLoggedIn;
+    // const user = userLoggedIn;
     
     return (
         <div className='top'>
@@ -23,15 +23,17 @@ const TopBar = ({userLoggedIn}) => {
                     <li className="topListItem"><Link to="/about" className='linkStyle'>ABOUT</Link></li>
                     <li className="topListItem"><Link to="/contact" className='linkStyle'>CONTACT</Link></li>
                     <li className="topListItem"><Link to="/write" className='linkStyle'>WRITE</Link></li>
-                    { user && <li className="topListItem"><Link to="/logout" className='linkStyle'>LOGOUT</Link></li> }
+                    {/* { user && <li className="topListItem"><Link to="/logout" className='linkStyle'>LOGOUT</Link></li> } */}
                 </ul>
             </div>
             <div className="topRight">
-                { user ? 
-                        <img src={DP} alt='' className='topImg'/> : <ul className='topList'>
+                {/* { user ?  */}
+                        <Link to="/settings"><img src={DP} alt='' className='topImg'/></Link>
+                        {/* : */}
+                        <ul className='topList'>
                             <li className='topListItem'><Link to="/login" className='linkStyle'>LOGIN</Link></li>
                             <li className='topListItem'><Link to="/register" className='linkStyle'>REGISTER</Link></li></ul>
-                }
+                {/* } */}
                 <FontAwesomeIcon className='topSearchIcon' icon={faMagnifyingGlass}/>
             </div>
         </div>

@@ -43,3 +43,8 @@
     color: white;
     cursor: pointer;
 }
+
+.regLink{
+    text-decoration: none;
+    color: white;
+}

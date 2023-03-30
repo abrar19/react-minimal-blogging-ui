@@ -13,18 +13,28 @@ import {
 import Single from "./pages/single/Single";
 
 function App() {
-  const userLoggedIn = true;
+  // const userLoggedIn = true;
   return (
     <div className="App">
       <Router>
-        <TopBar userLoggedIn={userLoggedIn}/>
+        <TopBar
+        // userLoggedIn={userLoggedIn}
+        />
         <Routes>
-          <Route path="/" element={userLoggedIn ? <Home/> : <Register/>}>Home</Route>
+          {/* <Route path="/" element={userLoggedIn ? <Home/> : <Register/>}>Home</Route>
           <Route path="/register" element={userLoggedIn ? <Home/> : <Register/>}>Register</Route>
           <Route path="/login" element={userLoggedIn ? <Home/> : <Login/>}>Login</Route>
           <Route path="/write" element={userLoggedIn ? <Write/> : <Login/>}>Write</Route>
           <Route path="/settings" element={userLoggedIn ? <Settings/> : <Login/>}>Settings</Route>
-          <Route path="/post/:postId" element={userLoggedIn ? <Single/> : <Login/>}>Single</Route>
+          <Route path="/post/:postId" element={userLoggedIn ? <Single/> : <Login/>}>Single</Route> */}
+
+          <Route path="/" element={<Home/>}>Home</Route>
+          <Route path="/register" element={<Register/>}>Register</Route>
+          <Route path="/login" element={<Login/>}>Login</Route>
+          <Route path="/write" element={<Write/>}>Write</Route>
+          <Route path="/settings" element={<Settings/>}>Settings</Route>
+          <Route path="/post/:postId" element={<Single/>}>Single</Route>
+          
         </Routes>
       </Router>
     </div>

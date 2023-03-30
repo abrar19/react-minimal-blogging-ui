@@ -15,7 +15,7 @@ const Register = () => {
                 <input type="password" placeholder='Enter your Password...' />
                 <button className='registerBtn'>Register</button>
             </form>
-            <button className='registerLoginBtn'><Link to="/login">Login</Link></button>
+            <button className='registerLoginBtn'><Link className="logLink" to="/login">Login</Link></button>
         </div>
     );
 }

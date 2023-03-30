@@ -21,6 +21,9 @@
     border-radius: 50%;
     object-fit: cover;
 }
+.topImg:hover{
+    border: 1px solid;
+}
 .topIcon{
     font-size: 20px;
     margin-right: 10px;
@@ -34,7 +37,7 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0px;
+    margin: 0px 0px 0px 5px;
     padding: 0px;
 }
 .topListItem{
@@ -42,6 +45,9 @@
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
+}
+.topListItem:hover{
+    border-bottom: 1px solid #444;
 }
 .linkStyle{
     text-decoration: none;

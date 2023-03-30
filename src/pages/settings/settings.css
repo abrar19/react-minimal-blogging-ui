@@ -47,6 +47,9 @@
     margin-left: 10px;
     cursor: pointer;
 }
+.settingsPPIcon:hover{
+    border: 1px solid rgb(238, 103, 103);
+}
 .settingsForm>label{
     font-size: 20px;
     margin-top: 20px;
